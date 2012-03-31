@@ -1,0 +1,150 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./cssStyle.css" />
+<style type="text/css">
+</style>
+	<script type = "text/javascript">
+	function modifyBoundaries()
+	{
+		var w = window.innerWidth;
+		var h = window.innerHeight;
+
+		var divConcerned = document.getElementById('headerDiv');
+		divConcerned.style.width = w + "px";
+		divConcerned.style.height = "40px";
+		divConcerned.style.top = 0 + "px";
+		divConcerned.style.left = 0 + "px";
+
+		divConcerned = document.getElementById('footerDiv');
+		divConcerned.style.width = w +  "px";
+		divConcerned.style.height = '20px';
+		divConcerned.style.bottom = 0 +  "px";
+		divConcerned.style.left = 0 +  "px";
+
+		w = w -40;
+		h = h -40;
+
+		divConcerned = document.getElementById('mainMajorDiv');
+		divConcerned.style.width = w +  "px";
+		divConcerned.style.height = h*0.8 + "px";
+		//divConcerned.style.bottom = 0 +  "px";
+		//divConcerned.style.left = 0 +  "px";
+
+		divConcerned = document.getElementById('leftDivSpace');
+		divConcerned.style.width = 20 +  "px";
+		divConcerned.style.height = h*0.8 + "px";
+		//divConcerned.style.bottom = 0 +  "px";
+		//divConcerned.style.left = 0 +  "px";
+
+		/*divConcerned = document.getElementById('rightDivSpace');
+		divConcerned.style.width = 20 +  "px";
+		divConcerned.style.height = h*0.8 + "px";
+		//divConcerned.style.bottom = 0 +  "px";
+		//divConcerned.style.left = 0 +  "px";*/
+
+		divConcerned = document.getElementById('middleDiv');
+		divConcerned.style.width = w*0.95 +  "px";
+		divConcerned.style.height = h*0.95 + "px";
+		//divConcerned.style.bottom = 0 +  "px";
+		//divConcerned.style.left = 0 +  "px";
+
+		divConcerned = document.getElementById('middleUpperDiv');
+		divConcerned.style.width = w*0.95 +  "px";
+		divConcerned.style.height = h*0.24 + "px";
+		//divConcerned.style.bottom = 0 +  "px";
+		//divConcerned.style.left = 0 +  "px";
+
+		divConcerned = document.getElementById('photoDiv');
+		divConcerned.style.width = w*0.20 +  "px";
+		divConcerned.style.height = h*0.24 + "px";
+		//divConcerned.style.bottom = 0 +  "px";
+		//divConcerned.style.left = 0 +  "px";
+
+		divConcerned = document.getElementById('infoDiv');
+		divConcerned.style.width = w*0.65 +  "px";
+		divConcerned.style.height = h*0.24 + "px";
+		//divConcerned.style.bottom = 0 +  "px";
+		//divConcerned.style.left = 0 +  "px";
+
+		divConcerned = document.getElementById('middleLowerDiv');
+		divConcerned.style.width = w*0.95 +  "px";
+		divConcerned.style.height = h*0.71 + "px";
+		//divConcerned.style.bottom = 0 +  "px";
+		//divConcerned.style.left = 0 +  "px";
+
+		divConcerned = document.getElementById('generalDiv');
+		divConcerned.style.width = w*0.30 +  "px";
+		divConcerned.style.height = h*0.71 + "px";
+		//divConcerned.style.bottom = 0 +  "px";
+		//divConcerned.style.left = 0 +  "px";
+
+		divConcerned = document.getElementById('dreamDiv');
+		divConcerned.style.width = w*0.65 +  "px";
+		divConcerned.style.height = h*0.71 + "px";
+		//divConcerned.style.bottom = 0 +  "px";
+		//divConcerned.style.left = 0 +  "px";
+
+
+	}
+	</script>
+</head>
+
+		<body onload="modifyBoundaries()">
+		<div id="headerDiv" class = "stackHorizontally">
+			<span align= "left" width="20">
+			</span>
+			<span align= "left" style = "padding-right: 20px; padding-left: 20px">
+				<img src = "./Drimmitwhite.png"  width="86" height="40" />
+			</span>
+			<span align= "left" style = "padding-right: 5px">
+				<img src = "./update.png"  width="40" height="40" />
+			</span>
+			<span align= "left" style = "padding-right: 5px">
+				<img src = "./connections.png"  width="40" height="40" />
+			</span>
+			<span align= "left" style = "padding-right: 20pxS">
+				<img src = "./mail.png"  width="40" height="40" />
+			</span>
+		</div> <!--</header>-->
+		<div class = "stackHorizontally" id="mainMajorDiv" align = "center">
+			<div id="leftDivSpace"  style = "color:#00FF00" align = "left">
+			</div> <!-- </leftdivspace> -->
+			<div id="middleDiv"  class = "stackVertically" style = "color:#00FFFF" align = "center">
+				<div class = "stackHorizontally" id="middleUpperDiv"  style = "color:#FFFF00" align = "top">
+					<span id="photoDiv"  style = "color:#000000" align = "left">
+						<span align="left" style = "padding: 55px">
+							<img src = "./profilePic1.jpg"  width="80" height="80" align= "center" float = "center"/>
+						</span>
+						<span align="left" id = "personName" style = "padding: 15px">
+							TEXT
+						</span>
+					</span> <!-- </photodiv>-->
+					<span id="infoDiv"  style = "color:#999999" align = "left">
+						DESCRIPTION
+					</span> <!-- </infodiv>-->
+				</div> <!-- </middleupperdiv>-->
+				<div class = "stackHorizontally" id="middleLowerDiv"  style = "color:#009999" align = "bottom">
+					<span id="generalDiv"  style = "color:#990000" align = "left">
+						SUBSCRIPTION LIST
+<div> <span align="left"> <a href=""> AIM 1 </a> </span> <span align="right" float="right"> 20 </span> </div>
+<div> <a href=""> AIM 2 </a> </div>
+<div> <a href=""> AIM 3 </a> </div>
+<div> <a href=""> AIM 4 </a> </div>
+<div> <a href=""> AIM 1 </a> </div>
+<div> <a href=""> AIM 2 </a> </div>
+<div> <a href=""> AIM 3 </a> </div>
+<div> <a href=""> AIM 4 </a> </div>
+					</span> <!-- </generaldiv>-->
+					<span id="dreamDiv"  style = "color:#006600" align = "left">
+i am on
+					</span> <!-- </dreamdiv>-->
+				</div> <!-- </middlelowerdiv>-->
+			</div> <!-- </middlediv>-->
+			 <!--<div id="rightDivSpace"  style = "color:#000000" align = "left">
+			</div> </rightdivspace>-->
+		</div>
+		<div id="footerDiv">
+footer
+		</div> <!--</footer>-->
+	</body>
+</html>
