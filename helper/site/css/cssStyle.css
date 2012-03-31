@@ -1,0 +1,110 @@
+body
+{
+	margin:0;
+	padding:60 40 20 40;
+	display:block;
+	background-color:#8b8878;
+}
+.stackHorizontally
+{
+	position: relative;
+	float: left;
+	width:6px;
+	height:2px;
+
+}
+.stackVertically
+{
+	position: relative;
+	float: top;
+	float: left;
+	width:60px;
+	height:20px;	
+
+}
+#headerDiv
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:#333838;
+	 
+	width : 20px;
+	height : 20px;
+}
+#mainMajorDiv
+{
+	position:relative; 
+	float: center;
+	display:block;
+}
+#leftDivSpace
+{  
+	position:relative;
+	float:left; 
+	top:0px;
+	left:0px;
+}
+#middleDiv
+{
+	position:relative;
+	float: center; 
+}
+#middleUpperDiv
+{
+	position:relative;
+	float: top; 
+	top:0px;
+	left:0px;
+}
+#photoDiv
+{  
+	position:relative;
+	float:left; 
+	top:0px;
+	left:0px;
+}
+#infoDiv
+{
+	position:relative;
+	float:left; 
+	top:0px;
+	right:0px;
+}
+#middleLowerDiv
+{
+	position:relative;
+	float: bottom; 
+	/*top:0;
+	left:0;*/
+}
+#generalDiv
+{
+	position:relative;
+	float:left; 
+	/*top:0;
+	left:0;*/
+}
+#dreamDiv
+{
+	position:relative;
+	float:left;
+	/*top:0;
+	right:0;*/
+}
+/*#rightDivSpace
+{
+	position:relative;
+	float:right; 
+	top:0px;
+	right:0px;
+}*/
+#footerDiv
+{  
+	position:absolute;
+	bottom:0;
+	left:0; 
+	background-color:#333838;
+	width : 20px;
+	height : 20px;
+}
