@@ -8,7 +8,6 @@ def loadapi(file):
     ''' Helper to load files '''
     datafile = open(sys.argv[1])
     datatxt = "".join([line.strip() for line in datafile.readlines()])
-    print datatxt
     datajson = json.loads(datatxt)
 
 @route('/api/<filename>')
